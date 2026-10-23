@@ -1,6 +1,6 @@
 package entities;
 
-public class AquaticAnimal extends Animal{
+public abstract class AquaticAnimal extends Animal{
     protected  String habitat;
     public AquaticAnimal(String family, String name, int age, boolean isMammal,String habit){
         super(family,name,age,isMammal);
@@ -17,8 +17,6 @@ public class AquaticAnimal extends Animal{
 
 
 
-    public void swim() {
-        System.out.println("this aquatic animal is swimming");
-    }
+    public abstract void swim();
 
 }
